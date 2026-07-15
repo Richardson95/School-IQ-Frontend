@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Parentfocus",
+    "name": "School IQ",
     "slug": "Parentfocus",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -10,7 +10,7 @@
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0F2448"
     },
     "ios": {
       "supportsTablet": true
@@ -18,12 +18,31 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#FFFDE7"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.richardsons.schoolapp",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow School IQ to access your photos so you can set a profile picture.",
+          "cameraPermission": "Allow School IQ to use the camera so you can take a profile picture."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5535ecae-3e64-44b2-a91e-f0f2211f8e3f"
+      }
+    },
+    "owner": "richardsons"
   }
 }
